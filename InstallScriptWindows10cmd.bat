@@ -3,7 +3,7 @@
 :: Welcome message
 @echo off
 
-echo Please install your graphics drivers AFTER this if you have not already. If you already have, you do not need to do anything else.
+echo If you did not run this file as an administrator, please go back and do so. Otherwise this will NOT work. Please install your graphics drivers AFTER this if you have not already. If you already have, you do not need to do anything else.
 
 pause
 
