@@ -7,8 +7,9 @@ echo Please install your graphics drivers AFTER this if you have not already. If
 
 pause
 
-:: Installs Chocolatey using PowerShell (Windows 11)
+:: Installs Chocolatey using PowerShell (Windows 10 using cmd.exe)
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+choco upgrade chocolatey
 
 :: Installs all other software
 choco install firefox steam temurin8 temurin17 temurin prismlauncher epicgameslauncher discord virtualbox gimp git blender davinciresolve paint.net obs-studio vlc curl winfetch
