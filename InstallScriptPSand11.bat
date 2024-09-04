@@ -7,7 +7,7 @@ echo If you did not run this file as an administrator, please go back and do so.
 
 pause
 
-:: Installs Chocolatey using PowerShell (Windows 11)
+:: Installs Chocolatey using PowerShell (Windows 11 and PowerShell)
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 choco upgrade chocolatey
 
