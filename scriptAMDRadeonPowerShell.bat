@@ -9,7 +9,7 @@ choco install curl
 
 :: Installs the AMD Adrenaline software
 cd Downloads
-curl -o -L AMD_Adrenaline.exe https://drivers.amd.com/drivers/installer/24.10/whql/amd-software-adrenalin-edition-24.8.1-minimalsetup-240829_web.exe
+curl -o AMD_Adrenaline.exe https://drivers.amd.com/drivers/installer/24.10/whql/amd-software-adrenalin-edition-24.8.1-minimalsetup-240829_web.exe
 start AMD_Adrenaline.exe
 cd ..
 
