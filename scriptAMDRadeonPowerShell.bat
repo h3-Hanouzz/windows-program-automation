@@ -1,8 +1,6 @@
 :: This is the script for people with AMD drivers using Windows 11. The only distintion here is which graphics drivers each file comes with.
 
 :: Activate Windows if not already activated, may require manual intervention
-setlocal enabledelayedexpansion
-
 :checkActivation
 for /f "tokens=2*" %%a in ('slmgr.vbs /xpr') do set "activationStatus=%%b"
 
