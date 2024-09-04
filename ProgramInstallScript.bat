@@ -1,4 +1,11 @@
-:: This is the script for people with AMD drivers using Windows 11. The only distintion here is which graphics drivers each file comes with.
+:: This simple script is for people using Windows 10 and 11.
+
+:: Welcome message
+@echo off
+
+echo Please install your graphics drivers AFTER this if you have not already. If you already have, you do not need to do anything else.
+
+pause
 
 :: Installs Chocolatey using PowerShell (Windows 11)
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
@@ -18,5 +25,9 @@ reg add "HKEY_CURRENT_USER\Control Panel\Keyboard" /v FilterKeys /t REG_DWORD /d
 :: Sets the wallpaper
 :: rundll32.exe user32.dll,SystemParametersInfo 0 0 <wallpaper_path> 0
 
-echo "Please install your graphics drivers
+:: End message
+@echo off
 
+echo Please install your graphics drivers now.
+
+pause
