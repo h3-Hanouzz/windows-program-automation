@@ -14,7 +14,7 @@ start AMD_Adrenaline.exe
 cd ..
 
 :: Installs all other software
-choco install firefox steam temurin8 temurin17 temurin prismlauncher epicgameslauncher discord virtualbox gimp git blender davinciresolve
+choco install firefox steam temurin8 temurin17 temurin prismlauncher epicgameslauncher discord virtualbox gimp git blender davinciresolve paint.net obs-studio vlc
 
 :: Sets dark theme
 wt settings --set "defaultTheme" "Dark"
@@ -25,6 +25,6 @@ reg add "HKEY_CURRENT_USER\Control Panel\Keyboard" /v ToggleKeys /t REG_DWORD /d
 reg add "HKEY_CURRENT_USER\Control Panel\Keyboard" /v FilterKeys /t REG_DWORD /d 0 /f
 
 :: Sets the wallpaper
-rundll32.exe user32.dll,SystemParametersInfo 0 0 <wallpaper_path> 0
+:: rundll32.exe user32.dll,SystemParametersInfo 0 0 <wallpaper_path> 0
 
 
