@@ -1,9 +1,9 @@
-:: This simple script is for people using Windows 10 and 11.
+:: This simple script is for people using cmd.exe on Windows 10.
 
 :: Welcome message
 @echo off
 
-echo If you did not run this file as an administrator, please go back and do so. Otherwise this will NOT work. Please install your graphics drivers AFTER this if you have not already. If you already have, you do not need to do anything else.
+echo If you did not run this file as an administrator, please go back and do so. Otherwise this will NOT work. Please install your graphics drivers AFTER this if you have not already done so.
 
 pause
 
@@ -12,10 +12,7 @@ pause
 choco upgrade chocolatey
 
 :: Installs all other software
-choco install firefox steam temurin8 temurin17 temurin prismlauncher epicgameslauncher discord virtualbox gimp git blender davinciresolve paint.net obs-studio vlc curl winfetch
-
-:: Sets dark theme
-wt settings --set "defaultTheme" "Dark"
+choco install firefox temurin8 temurin17 temurin prismlauncher epicgameslauncher discord virtualbox gimp git blender davinciresolve paint.net obs-studio vlc curl winfetch
 
 :: Disables the "Allow the shortcut key to start (Sticky/Toggle/Filter) keys"? settings
 reg add "HKEY_CURRENT_USER\Control Panel\Keyboard" /v StickyKeys /t REG_DWORD /d 0 /f
@@ -28,6 +25,6 @@ reg add "HKEY_CURRENT_USER\Control Panel\Keyboard" /v FilterKeys /t REG_DWORD /d
 :: End message
 @echo off
 
-echo Please install your graphics drivers now.
+echo If you have not already done so, please install your graphics drivers now.
 
 pause
