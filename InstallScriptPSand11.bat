@@ -1,4 +1,4 @@
-:: This simple script is for people using Windows 10 and 11.
+:: This simple script is for people using PowerShell/Windows Terminal on Windows 10 and 11.
 
 :: Welcome message
 @echo off
