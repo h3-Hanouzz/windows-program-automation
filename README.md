@@ -1,5 +1,4 @@
 # A Windows Gaming PC program automation script
-Essentially what I use instead of Ninite because it's faster and more diverse. This uses PowerShell, so it will need to be executed using the Windows Terminal on Windows 11 or PowerShell as admin on Windows 10.
-Windows 10 links coming soon.
+Essentially what I use instead of Ninite because it can be configured to do more than install stuff. There are versions for both cmd.exe and PowerShell. Both will need to be run as administrator in order to work properly.
 
 Credits: @Chocolatey
