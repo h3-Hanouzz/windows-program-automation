@@ -1,9 +1,9 @@
-:: This simple script runs on cmd.exe on Windows 10 & 11
+:: This simple script runs on cmd.exe on Windows 10 & 11, installs programs, and changes some settings.
 
 :: Welcome message
 @echo off
 
-echo If you did not run this file as an administrator, please go back and do so. Otherwise this will NOT work. Please install your graphics drivers after this if you have not already done so. I would also recommend making sure you've done all the Windows Updates before running this.
+echo If you did not run this file as an administrator, please go back and do so. Otherwise this will NOT work. If you have not finished all the Windows Updates and installed your graphics drivers, press ALT + F4 and do so before coming back.
 
 pause
 
@@ -17,7 +17,7 @@ reg add "HKEY_CURRENT_USER\Control Panel\Keyboard" /v FilterKeys /t REG_DWORD /d
 choco upgrade chocolatey
 
 :: Installs all other software
-choco install firefox temurin8 temurin17 temurin prismlauncher epicgameslauncher discord virtualbox gimp git blender davinciresolve paint.net obs-studio vlc curl winfetch
+choco install firefox temurin8 temurin17 temurin prismlauncher epicgameslauncher discord virtualbox gimp git blender paint.net obs-studio vlc curl winfetch
 
 :: Sets the wallpaper
 :: rundll32.exe user32.dll,SystemParametersInfo 0 0 <wallpaper_path> 0
@@ -25,6 +25,6 @@ choco install firefox temurin8 temurin17 temurin prismlauncher epicgameslauncher
 :: End message
 @echo off
 
-echo If you have not already done so, please install your graphics drivers now.
+echo Tasks complete! You may now exit.
 
 pause
