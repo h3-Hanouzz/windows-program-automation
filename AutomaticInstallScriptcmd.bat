@@ -3,7 +3,7 @@
 :: Welcome message
 @echo off
 
-echo If you did not run this file as an administrator, please go back and do so. Otherwise this will NOT work. If you have not finished all the Windows Updates and installed your graphics drivers, press ALT + F4 and do so before coming back.
+echo If you did not run this file as an administrator, please go back and do so. Otherwise this will NOT work. If you haven't finished all the Windows Updates and installed your graphics drivers, press ALT + F4 and do so before coming back.
 
 pause
 
