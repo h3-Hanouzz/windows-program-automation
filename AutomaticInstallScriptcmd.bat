@@ -17,7 +17,8 @@ reg add "HKEY_CURRENT_USER\Control Panel\Keyboard" /v FilterKeys /t REG_DWORD /d
 choco upgrade chocolatey
 
 :: Installs all other software
-choco install librewolf choco install temurin8jre temurin17 temurin21 prismlauncher epicgameslauncher discord virtualbox gimp git blender paint.net obs-studio vlc curl winfetch
+choco install librewolf 
+choco install temurin8jre temurin17 temurin21 prismlauncher epicgameslauncher discord virtualbox gimp git blender paint.net obs-studio vlc curl winfetch
 
 :: Sets the wallpaper
 :: rundll32.exe user32.dll,SystemParametersInfo 0 0 <wallpaper_path> 0
